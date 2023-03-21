@@ -1,25 +1,109 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d91e5a2e2c.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
     <div class="hero min-h-screen">
-      <canvas id="bg" class=""></canvas>
-      <div class="hero-content z-20 text-center">
+      <div class="hero-overlay">
+        <canvas id="bg" class=""></canvas>
+      </div>
+      <div class="hero-content text-center text-white">
         <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">Living with Disability</h1>
-          <p class="mb-5">The issues that millions of disabled people worldwide face on a daily basis.</p>
-          <button class="btn btn-black">Get Started</button>
+          <h1 class="mb-5 text-5xl font-bold whitespace-nowrap text-platinum pt-96" >Living with Disability</h1>
+          <p class="mb-5 text-platinum">The issues that millions of disabled people worldwide face on a daily basis.</p>
+          <a href="#start" class="h-5"><i class="fa-solid fa-caret-down fa-bounce  text-platinum text-8xl mt-96"></i></a>
         </div>
       </div>
     </div>
+    <!-- <div class="bg-gradient-to-b from-[#1F2421] to-white h-96 pt-5"></div> -->
+    
 
-    <div class="bg-[#dce1de]"></div>
+    <div class="bg-gradient-to-b from-[#1F2421] to-jungle grid grid-cols-12 grid-rows-3 ">
+      <p class="text-2xl mt-20 font-serif col-start-5 row-start-1 col-span-5 text-platinum" id="start">Disabled people face various challenges in society, ranging from <a class="underline decoration-platinum hover:decoration-cambridge hover:bg-jungle p-1 transition-all rounded-lg" href="https://www.dol.gov/general/topic/disability/statistics">discrimination, lack of accessibility, and limited opportunities.</a><i class="fa-solid fa-arrow-up-right-from-square font-light text-lg"></i>
+        These challenges can have a significant impact on their quality of life, making it harder for them to access basic services and participate in society. For instance, many public spaces are not accessible to people with disabilities, which can be isolating and limiting. Additionally, disabled individuals may face discrimination in employment, education, and other areas, which can lead to lower income levels and reduced opportunities.</p>
+      <p class="text-2xl font-serif col-start-5 col-span-5 row-start-2 col-span-5 text-platinum">To address these issues, several local solutions can be implemented. Firstly, cities and communities can focus on improving accessibility by providing ramps, elevators, and wheelchair-friendly sidewalks. This can make it easier for disabled individuals to navigate public spaces and access basic services. Secondly, businesses and public spaces can ensure that their facilities are fully accessible to people with disabilities, including accessible restrooms, parking spots, and seating arrangements. This can help to create a more inclusive and welcoming environment for disabled individuals. Thirdly, local organizations can offer workshops and training sessions to educate the public on disability awareness and sensitivity. This can help to reduce stigma and discrimination towards disabled individuals and promote a more inclusive society.</p>
+      <p class="text-2xl font-serif col-start-5 col-span-5 row-start-3 my-10 text-platinum">At the societal level, governments can introduce legislation to protect the rights of people with disabilities and promote their inclusion in all aspects of society. This can include measures such as financial support for disabled individuals, anti-discrimination laws, and affirmative action policies. Furthermore, societal attitudes towards disabled people need to change, and this can be achieved through awareness campaigns and media representation of disabled individuals in a positive and empowering light. Governments can also invest in research and development to create new technologies and services that can improve the lives of disabled individuals. For example, assistive technologies such as hearing aids, screen readers, and mobility aids can help to reduce barriers and increase accessibility for disabled individuals.</p>
+    </div>
+
+    <div class='bg-jungle grid grid-cols-12 grid-rows-3 gap-x-5 gap-y-10'>
+      <p class="text-2xl text-platinum font-serif col-start-5 row-start-1 col-span-5">France is a country that has made significant strides in addressing the challenges faced by people with disabilities. However, despite these efforts, people with disabilities in France still face significant challenges.</p>
+      <div class="col-start-3 row-start-2 col-span-4">
+        <div class="card bg-base-100 hover:shadow-2xl hover:drop-shadow-2xl hover:translate-y-[-2rem] transition-all">
+          <figure><img src="https://epe.brightspotcdn.com/dims4/default/7dd1b7b/2147483647/strip/true/crop/600x338+0+6/resize/1200x675!/quality/90/?url=https%3A%2F%2Fepe-brightspot.s3.amazonaws.com%2F7e%2F0e%2F803720d45e6560865516a12ce74b%2Faccessible-img.jpg"></figure>
+          <div class="card-body">
+            <h2 class="card-title text-3xl">Accessibility Issues</h2>
+            <p class="text-xl ">One of the most significant challenges that people with disabilities face in France is accessibility. Many buildings, public transport, and other facilities are not accessible to people with disabilities, making it difficult for them to perform their daily activities. France has implemented several solutions to address this problem, such as installing ramps in public buildings and public transport and making them wheelchair accessible. France has also introduced a law that requires all public buildings to be accessible to people with disabilities by 2015.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel w-[90vw] ml-[5vw] h-[50rem] rounded-lg shadow-2xl drop-shadow-2xl">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="https://adatile.com/wp-content/uploads/2018/04/Benefits-of-Handicap-Ramps.jpg" class="w-full object-cover" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://bullockaccess.com/wp-content/uploads/2019/07/double-doorway.jpeg" class="w-full object-cover" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://www.thoughtco.com/thmb/hu3ja-oQv23AfinhVPHZRZghmJQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/closed-lift-door-1051317118-5c64607a46e0fb0001587ce5.jpg" class="w-full object-cover" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://www.braunability.com/us/en/blog/disability-rights/ada-parking-requirements/_jcr_content/root/responsivegrid/mediacopy/backgroundImg.coreimg.100.1200.jpeg/1604952616000/parking-w-access-aisle.jpeg" class="w-full object-cover" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-start-7 row-start-2 col-span-4">
+        <div class="card bg-base-100 hover:shadow-2xl hover:drop-shadow-2xl hover:translate-y-[-2rem] transition-all">
+          <figure><img src="https://portside.org/sites/default/files/styles/large/public/field/image/disabled_0.jpg" class="w-full"></figure>
+          <div class="card-body">
+            <h2 class="card-title text-3xl">Employment Struggles</h2>
+            <p class="text-xl ">Another challenge faced by people with disabilities in France is employment. Many employers are unwilling to hire people with disabilities, and those who do often refuse to make reasonable accommodations. To address this problem, France has implemented several measures such as offering tax credits to employers who hire people with disabilities and providing financial assistance to companies that provide reasonable accommodations. Additionally, France has a quota system that requires companies to hire a certain percentage of employees with disabilities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-start-3 row-start-3 col-span-4">
+        <div class="card bg-base-100 hover:shadow-2xl hover:drop-shadow-2xl hover:translate-y-[-2rem] transition-all">
+          <figure><img src="https://njbmagazine.com/wp-content/uploads/2021/10/BIA-AI-Worker-Disablity_396657747.jpg"></figure>
+          <div class="card-body">
+            <h2 class="card-title text-3xl">Financial Aid for Disabilities</h2>
+            <p class="text-xl">France has also implemented a disability pension system to provide financial assistance to people with disabilities who cannot work due to their condition. The pension system provides financial assistance to individuals with disabilities, helping them to cover their basic needs. To qualify for this pension, individuals must have a disability that prevents them from working and must have contributed to the social security system for a certain number of years.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-start-7 row-start-3 col-span-4">
+        <div class="card bg-base-100 hover:shadow-2xl hover:drop-shadow-2xl hover:translate-y-[-2rem] transition-all">
+          <figure><img src="https://www.fastweb.com/uploads/article_photo/photo/2036094/crop635w_financial-aid-for-students-with-disabilities.jpg"></figure>
+          <div class="card-body">
+            <h2 class="card-title text-3xl">Education of Disabled Children</h2>
+            <p class="text-xl">Additionally, France has a fund for the education of handicapped kids, which provides financial assistance to schools that have students with disabilities. This fund helps to ensure that children with disabilities receive the education they deserve and are not left behind. France has also introduced a law that requires all schools to be accessible to children with disabilities.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
 
 
     <script type="module" src="/main.js"></script>

@@ -4,7 +4,12 @@ module.exports = {
     './index.html'
   ],
   theme: {
-    colors: {},
+    colors: {
+      'cambridge': '#9CC5A1',
+      'jungle': '#49A078',
+      'current': '#216869',
+      'platinum': '#DCE1DE'
+    },
     extend: {},
   },
   plugins: [require('daisyui')],
